@@ -1,0 +1,128 @@
+{
+	"info": {
+		"_postman_id": "c53ae50d-60c9-41b8-bddf-bcb728120ac0",
+		"name": "BTP training",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all Venodrs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/vendor",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"vendor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get single vendor",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/vendor/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"vendor",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a Vendor",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"code\": \"VENDX\",\r\n    \"companyName\": \"SAP Labs\",\r\n    \"contactPerson\": \"Charls Witkes\",\r\n    \"firstName\": \"Ravi\",\r\n    \"lastName\": \"SinghKonaraddi\",\r\n    \"website\": \"www.bijapur.com\",\r\n    \"email\": \"ravi@gmail.com\",\r\n    \"status\": \"marriedsingle\",\r\n    \"regDate\": \"2022-11-25T03:03:41.073+00:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/vendor/4",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"vendor",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update a Vendor Copy",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"code\": \"VENDX\",\r\n    \"companyName\": \"SAP Labs\",\r\n    \"contactPerson\": \"Charls Witkes\",\r\n    \"firstName\": \"Ravi\",\r\n    \"lastName\": \"SinghKonaraddi\",\r\n    \"website\": \"www.bijapur.com\",\r\n    \"email\": \"ravi@gmail.com\",\r\n    \"status\": \"marriedsingle\",\r\n    \"regDate\": \"2022-11-25T03:03:41.073+00:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/vendor",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"vendor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create a vendor Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"code\": \"VENDX\",\r\n    \"companyName\": \"SAP Labs\",\r\n    \"contactPerson\": \"Charls Witkes\",\r\n    \"firstName\": \"Ravi\",\r\n    \"lastName\": \"Konaraddi\",\r\n    \"website\": \"www.bijapur.com\",\r\n    \"email\": \"ravi@gmail.com\",\r\n    \"status\": \"married\",\r\n    \"regDate\": \"2022-11-25T03:03:41.073+00:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/vendor",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"vendor"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
