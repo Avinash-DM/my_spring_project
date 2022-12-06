@@ -1,0 +1,93 @@
+{
+    "code": "17336901-8584-460a-a546-15d74625c08e",
+    "companyName": "SAP Labs",
+    "contactPerson": "Charls Witkes",
+    "firstName": "Ravi",
+    "lastName": "Konaraddi",
+    "website": "www.bijapur.com",
+    "email": "ravi@gmail.com",
+    "status": "married",
+    "regDate": "2022-11-25T03:03:41.073+00:00"
+}
+
+{
+    "code": "17336901-8584-460a-a546-15d74625c08e",
+    "companyName": "EMC2",
+    "contactPerson": "Anurag",
+    "firstName": "Kantha",
+    "lastName": "Konaraddi",
+    "website": "www.EMC2.com",
+    "email": "kantha@gmail.com",
+    "status": "married",
+    "regDate": "2022-11-25T03:03:41.073+00:00"
+}
+
+{
+    "code": "17336901-8584-460a-a546-15d74625c08e",
+    "companyName": "EMC2",
+    "contactPerson": "Prakash",
+    "firstName": "Srinivas",
+    "lastName": "Konaraddi",
+    "website": "www.EMC2.com",
+    "email": "kantha@gmail.com",
+    "status": "married",
+    "regDate": "2022-11-25T03:03:41.073+00:00"
+    "address": [
+    	{
+    		"addressType":"H"
+    		"street":"MG Road"
+    		"city":"Benglore"
+    		"country":"India"
+    		"region":"APJ"
+    	}	
+    	
+    	{
+    		"addressType":"H"
+    		"street":"Rajkumar Road"
+    		"city":"Benglore"
+    		"country":"India"
+    		"region":"APJ"
+    	}	
+    ]
+}
+
+
+{
+    "code": "17336901-8584-460a-a546-15d74625c08e",
+    "companyName": "SAP Labs",
+    "contactPerson": "Charls Witkes",
+    "firstName": "Ravi",
+    "lastName": "Konaraddi",
+    "website": "www.bijapur.com",
+    "email": "ravi@gmail.com",
+    "status": "married",
+    "regDate": "2022-11-25T03:03:41.073+00:00"
+}
+
+
+{
+        "companyName": "EY",
+        "contactPerson": "Santosh",
+        "firstName": "Hooper",
+        "lastName": "Konaraddi",
+        "website": "www.ey.com",
+        "email": "ey@gmail.com",
+        "status": "married",
+        "regDate": "2022-11-25T03:03:41.073+00:00",
+        "addresses": [
+            {
+                "addressType": "H",
+                "street": "Delhi road",
+                "city": "Delhi",
+                "country": "India",
+                "region": "APJ"
+            },
+            {                
+                "addressType": "P",
+                "street": "Hassan Road",
+                "city": "Hassan",
+                "country": "India",
+                "region": "APJ"
+            }
+        ]
+    }
