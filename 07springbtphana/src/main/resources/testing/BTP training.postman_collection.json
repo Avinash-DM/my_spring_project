@@ -1,0 +1,200 @@
+{
+	"info": {
+		"_postman_id": "c53ae50d-60c9-41b8-bddf-bcb728120ac0",
+		"name": "BTP training",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all Venodrs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/vendor",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"vendor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search for Company Name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/vendor/search?company=EMc2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"vendor",
+						"search"
+					],
+					"query": [
+						{
+							"key": "company",
+							"value": "EMc2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lookup a vendoe by employee name - custom query",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/vendor/lookup/vi",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"vendor",
+						"lookup",
+						"vi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get single vendor",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/vendor/17336901-8584-460a-a546-15d74625c08e",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"vendor",
+						"17336901-8584-460a-a546-15d74625c08e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a Vendor",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"code\": \"VENDX\",\r\n    \"companyName\": \"SAP Labs\",\r\n    \"contactPerson\": \"Charls Witkes\",\r\n    \"firstName\": \"Ravi\",\r\n    \"lastName\": \"SinghKonaraddi\",\r\n    \"website\": \"www.bijapur.com\",\r\n    \"email\": \"ravi@gmail.com\",\r\n    \"status\": \"marriedsingle\",\r\n    \"regDate\": \"2022-11-25T03:03:41.073+00:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/vendor/4",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"vendor",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update a Vendor Copy",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"code\": \"50b59d47-98d8-4a52-8dd3-ec0276feb52c\",\r\n        \"companyName\": \"EMC2\",\r\n        \"contactPerson\": \"Anurag_updated\",\r\n        \"firstName\": \"Kantha\",\r\n        \"lastName\": \"Konaraddi\",\r\n        \"website\": \"www.EMC2.com\",\r\n        \"email\": \"kantha@gmail.com\",\r\n        \"status\": \"married\",\r\n        \"regDate\": \"2022-11-25T03:03:41.073+00:00\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/vendor",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"vendor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create a vendor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"companyName\": \"EY\",\r\n        \"contactPerson\": \"Santosh\",\r\n        \"firstName\": \"Hooper\",\r\n        \"lastName\": \"Konaraddi\",\r\n        \"website\": \"www.ey.com\",\r\n        \"email\": \"ey@gmail.com\",\r\n        \"status\": \"married\",\r\n        \"regDate\": \"2022-11-25T03:03:41.073+00:00\",\r\n        \"addresses\": [\r\n            {\r\n                \"addressType\": \"H\",\r\n                \"street\": \"Delhi road\",\r\n                \"city\": \"Delhi\",\r\n                \"country\": \"India\",\r\n                \"region\": \"APJ\"\r\n            },\r\n            {\r\n                \"addressid\": \"9d66bfdb-07ca-4907-aef9-61c70bc15488\",\r\n                \"addressType\": \"P\",\r\n                \"street\": \"Hassan Road\",\r\n                \"city\": \"Hassan\",\r\n                \"country\": \"India\",\r\n                \"region\": \"APJ\"\r\n            }\r\n        ]\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/vendor",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"vendor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Psot new address for one of the employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"addressType\":\"H\",\r\n    \"street\":\"MG Road\",\r\n    \"city\":\"Benglore\",\r\n    \"country\":\"India\",\r\n    \"region\":\"APJ\",\r\n    \"vendor_id\":\"fe30f91a-48d2-433a-bc87-32e6d6dee05d\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/address",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"address"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
